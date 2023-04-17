@@ -1,0 +1,16 @@
+name = "svelte-cloudflare-example"
+type = "webpack"
+compatibility_flags = []
+workers_dev = true
+compatibility_date = "2023-01-28"
+
+main = "./.cloudflare/worker.js"
+site.bucket = "./.cloudflare/public"
+
+build.command = "npm run build"
+
+[[ d1_databases ]]
+binding = "TODO_LIST" # i.e. available in your Worker on env.DB
+database_name = "todo"
+database_id = "8b0db59c-69c6-4d85-b016-efa536ff69b3"
+preview_database_id = "391865bd-fea0-4c94-804a-4d5c7a146ccd"
